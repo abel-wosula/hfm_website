@@ -1,0 +1,19 @@
+type Service {
+    id: ID!
+    thumbnail: String!
+    title: String!
+    description: String!
+    created_at: String!
+    updated_at: String!
+}
+
+input CreateServiceInput {
+    thumbnail: String!
+    title: String!
+    description: String!
+}
+
+type ServiceMutationResponse {
+    message: String!
+    service: Service!
+}
