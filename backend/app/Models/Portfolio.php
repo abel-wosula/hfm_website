@@ -15,5 +15,4 @@ class Portfolio extends Model
         'thumbnail',
         'yt_link'
     ];
-    //
 }
