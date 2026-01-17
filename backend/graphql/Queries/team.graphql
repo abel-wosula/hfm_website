@@ -1,0 +1,3 @@
+extend type Query {
+    team: [Team!]! @paginate(defaultCount: 10)
+}

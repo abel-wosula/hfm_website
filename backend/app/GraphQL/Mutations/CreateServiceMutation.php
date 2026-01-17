@@ -13,6 +13,7 @@ class CreateServiceMutation
         $service->title = $args['title'];
         $service->description = $args['description'];
         $service->thumbnail = $args['thumbnail'];
+        $service->short_description = $args['short_description'];
         $service->save();
 
 

@@ -1,0 +1,3 @@
+extend type Query {
+    uploadRecord: [UploadRecord!]! @paginate(defaultCount: 10)
+}

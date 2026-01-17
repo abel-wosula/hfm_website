@@ -15,5 +15,4 @@ class Team extends Model
         'last_name',
         'title'
     ];
-    //
 }

@@ -1,0 +1,29 @@
+input FileInput {
+    filename: String! # Original filename
+    mimeType: String # MIME type of the file
+}
+
+input AudioInput {
+    filename: String! # Original filename
+    mimeType: String # MIME type of the audio file
+}
+input CreateUploadInput {
+    music_title: String!
+    composer: String
+    youtube_link: String
+    file: Upload!
+    audio: Upload!
+}
+type UploadRecord {
+    id: ID!
+    music_title: String!
+    composer: String
+    youtube_link: String
+    file_path: String!
+    audio_path: String!
+    message: String
+}
+type UploadMutationResponse {
+    message: String!
+    upload: UploadRecord!
+}

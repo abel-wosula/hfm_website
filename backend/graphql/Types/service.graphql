@@ -3,6 +3,7 @@ type Service {
     thumbnail: String!
     title: String!
     description: String!
+    short_description: String!
     created_at: String!
     updated_at: String!
 }
@@ -11,6 +12,7 @@ input CreateServiceInput {
     thumbnail: String!
     title: String!
     description: String!
+    short_description: String!
 }
 
 type ServiceMutationResponse {
