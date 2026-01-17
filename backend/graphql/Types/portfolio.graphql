@@ -1,0 +1,21 @@
+type Portfolio {
+    id: ID!
+    thumbnail: String!
+    title: String!
+    description: String!
+    yt_link: String!
+    created_at: String!
+    updated_at: String!
+}
+
+input CreatePortfolioInput {
+    thumbnail: String!
+    title: String!
+    description: String!
+    yt_link: String!
+}
+
+type PortfolioMutationResponse {
+    message: String!
+    portfolio: Portfolio!
+}

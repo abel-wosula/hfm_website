@@ -1,0 +1,6 @@
+type Mutation {
+    createService(input: CreateServiceInput! @spread): ServiceMutationResponse!
+        @field(
+            resolver: "App\\GraphQL\\Mutations\\CreateServiceMutation@createService"
+        )
+}

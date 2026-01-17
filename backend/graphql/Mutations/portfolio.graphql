@@ -1,0 +1,8 @@
+extend type Mutation {
+    createPortfolio(
+        input: CreatePortfolioInput! @spread
+    ): PortfolioMutationResponse!
+        @field(
+            resolver: "App\\GraphQL\\Mutations\\CreatePortfolioMutation@createPortfolio"
+        )
+}

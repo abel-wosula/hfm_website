@@ -1,0 +1,20 @@
+type Event {
+    id: ID!
+    title: String!
+    description: String!
+    location: String!
+    created_at: String!
+    updated_at: String!
+}
+
+input CreateEventInput {
+    id: ID!
+    title: String!
+    description: String!
+    location: String!
+}
+
+type EventMutationResponse {
+    message: String!
+    event: Event!
+}

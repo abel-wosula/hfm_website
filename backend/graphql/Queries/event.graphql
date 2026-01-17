@@ -1,0 +1,3 @@
+extend type Query {
+    event: [Event!]! @paginate(defaultCount: 10)
+}

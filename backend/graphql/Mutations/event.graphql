@@ -1,0 +1,6 @@
+extend type Mutation {
+    createEvent(input: CreateEventInput! @spread): EventMutationResponse!
+        @field(
+            resolver: "App\\GraphQL\\Mutations\\CreateEventMutation@createEvent"
+        )
+}

@@ -1,0 +1,4 @@
+type Query {
+    services: [Service!]! @paginate(defaultCount: 10)
+    service(id: ID! @eq): Service @find
+}

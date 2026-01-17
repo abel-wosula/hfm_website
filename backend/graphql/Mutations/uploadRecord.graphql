@@ -1,0 +1,6 @@
+extend type Mutation {
+    createUpload(input: CreateUploadInput! @spread): UploadMutationResponse!
+        @field(
+            resolver: "App\\GraphQL\\Mutations\\CreateUploadMutation@createUpload"
+        )
+}
