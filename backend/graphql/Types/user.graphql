@@ -1,0 +1,26 @@
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    role: String!
+}
+
+input CreateUserInput {
+    name: String!
+    email: String!
+    password: String!
+    role: String!
+}
+type UserMutationResponse {
+    message: String!
+    user: User!
+}
+input UpdateUserInput {
+    name: String
+    email: String
+    password: String
+    role: String
+}
+input DeleteUserInput {
+  id: ID!
+}
